@@ -1,0 +1,207 @@
+nav{
+    position: fixed;
+    width: 100%;
+}
+.nav-item:hover{
+    background-color:rgba(0, 255, 162, 0.519);
+}
+.navbar-toggler:hover{
+    background-color:rgba(0, 255, 162, 0.519);
+}
+.navbar-brand{
+    color:rgba(0, 255, 162, 0.519) ;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url(highpayingbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.heading{
+    padding-top: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: rgb(27, 204, 204);
+}
+.highpaybg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding-block: 30px;
+}
+.firstparagraph{
+    padding-left: 7%;
+    padding-right: 7%;
+    font-size: larger;
+    color: white;
+}
+.secondparagraph{
+    padding-left: 7%;
+    font-size: large;
+    color: green;
+}
+.buttons-card{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-direction: row;
+}
+.dropdown-menu a:hover{
+    background-color:rgba(0, 255, 162, 0.519);
+}
+.card{
+    background-color: rgba(255, 255, 255, 0.058);
+    color: white;
+    font-weight: 500;
+}
+.lst-btn{
+  margin-top: 6%;
+}
+.active-item{
+    background-color:rgba(0, 255, 162, 0.519);
+}
+
+
+/* footer */
+.footer {
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 12%;
+  }
+  
+  .social-icon,
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+  
+  .social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+  
+  .menu__link:hover {
+    opacity: 1;
+  }
+  
+  .footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  
+  .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("https://i.ibb.co/wQZVxxk/wave.png");
+    background-size: 1000px 100px;
+  }
+  
+  .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+  }
+  
+  .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite !important;
+  }
+  
+  .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+  }
+  
+  .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 3s linear infinite;
+  }
+  
+  @keyframes animateWaves {
+    0% {
+      background-position-x: 1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position-x: -1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+
+/* laptop view */
+
+@media (min-width: 768px) {
+    .card-text{
+        font-size: 1.5rem;
+    }
+    .card-title{
+        font-size: 2rem;
+    }
+    .footer{
+        margin-top: 7%;
+    }
+    .firstparagraph{
+      font-size: 1.5rem; 
+    }
+    .secondparagraph{
+      font-size:1.5rem;
+    }
+
+}
