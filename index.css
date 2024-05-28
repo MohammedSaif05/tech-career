@@ -18,9 +18,6 @@ body{
     padding: 0;
     margin: 0;
 }
-.whole-body{
-  width: 950px;
-}
 .introduction{
     background-color: rgb(17,17,17);
     height: 600px;
@@ -238,9 +235,6 @@ body{
         height:750px;
         
     }
-    .whole-body{
-      width: 100%;
-    }
     .profile-pic {
         height: 90%;
         width: 40%;
@@ -292,3 +286,44 @@ body{
     margin-top: 6%;
 }
 }
+@media (max-width: 576px) { 
+  .introduction{
+    width: 610px;
+  }
+  .webintro-container{
+    width: 610px;
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 130px;
+  }
+  .team-bg{
+    width: 610px;
+  }
+  .footer{
+    width: 610px;
+    margin-top: 20%;
+  }
+ }
+ @media (max-width: 768px) and (min-width: 576px) {
+  .introduction{
+    width: 780px;
+  }
+  .webintro-container{
+    width: 780px;
+  }
+  .team-bg{
+    width: 780px;
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 80px;
+  }
+  .footer{
+    width: 780px;
+  }
+ }
