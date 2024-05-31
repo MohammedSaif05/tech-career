@@ -50,7 +50,7 @@
 </nav>
 <body>
   <!------introduction------->
-  <div class="first-section">
+  <div class="first-section" id="home-f">
     <div class="introduction">
       <img src="saif-profile.jpg" alt="Profile picture" class="profile-pic">
       <div class="name-section">
@@ -58,13 +58,13 @@
         <h1 class="mydesignation">WEB DEVELOPER</h1>
         <p class="myintropara">I'm a web designer & Front-end developer focused on crafting clean & user-friendly experiences,
           I am passionate about building excellent websites that improves the lives of those around me and also Student of 
-          Adhiyamaan college of enginneering, hosur and I'm persuing B.E (CSE) 1st year.</p>
+          Adhiyamaan college of enginneering, hosur and I'm pursuing B.E (CSE) 1st year.</p>
       </div>
     </div>
     </div>
     <br>
     <!-------website intro---------->
-    <div class="webintro-container">
+    <div class="webintro-container" id="about-f">
     <img src="Untitled-removebg-preview.png" class="weblogo">
     <div class="brandinfo">
       <h1 class="brandwel">WELCOME TO TECH GUIDE</h1>
@@ -78,7 +78,7 @@
     <div class="button btn btn-lg">
     <a href="highpaying jobs.html" class="btn btn-success btn-lg"><h2>Get started</h2></a>
     </div>
-<div class="team-bg">
+<div class="team-bg" id="team-f">
 <h1 class="team-info">Team</h1>
 <div class="container cont-team">
   <div class="row gy-5">
@@ -143,8 +143,9 @@
       </a></li>
   </ul>
   <ul class="menu">
-    <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
-    <li class="menu__item"><a class="menu__link" href="index.html">About</a></li>
+    <li class="menu__item"><a class="menu__link" href="index.html#home-f">Home</a></li>
+    <li class="menu__item"><a class="menu__link" href="index.html#about-f">About</a></li>
+    <li class="menu__item"><a class="menu__link" href="index.html#team-f">Team</a></li>
     <li class="menu__item"><a class="menu__link" href="https://wa.me/+918148387156" target="_blank">Contact</a></li>
 
   </ul>
@@ -153,204 +154,381 @@
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-
-
 <script>
-const searchForm = document.querySelector('form[role="search"]');
-const searchInput = document.getElementById('search-keyword');
-const searchButton = searchForm.querySelector('button[type="submit"]');
-
-searchButton.addEventListener('click', (event) => {
-  event.preventDefault();
-  let keyword = searchInput.value.trim();
-  let keyword1 = keyword.toLowerCase();
-  if (keyword1=="java") {
-    window.location.href = `programmingTutorial.html?q=${keyword}`;
-  }
-  else if(keyword1=="javascript"){
-    window.location.href = `programmingTutorial.html?q=${keyword}`;
-  }
-  else if(keyword1=="c"){
-    window.location.href = `programmingTutorial.html?q=${keyword}`;
-  }
-  else if(keyword1=="python"){
-    window.location.href = `programmingTutorial.html?q=${keyword}`;
-  }
-  else if(keyword1=="c++"){
-    window.location.href = `programmingTutorial.html?q=${keyword}`;
-  }
-  else if(keyword1=="php"){
-    window.location.href = `programmingTutorial.html?q=${keyword}`;
-  }
-  else if(keyword1=="r"){
-    window.location.href = `programmingTutorial.html?q=${keyword}`;
-  }
-  else if(keyword1=="kotlin"){
-    window.location.href = `programmingTutorial.html?q=${keyword}`;
-  }
-  else if(keyword1=="sql"){
-    window.location.href = `programmingTutorial.html?q=${keyword}`;
-  }
-  else if(keyword=="swift"){
-    window.location.href = `programmingTutorial.html?q=${keyword}`;
-  }
-  else if(keyword=="software engineer"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="software engineer manager"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="app developer"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="application developer"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="mobile application developer"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="andriod app developer"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="mobile app developer"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="information system security manager"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="information security manager"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="system security manager"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="database manager"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="data security analyst"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="product manager"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="artificial intelligence"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="ai engineer"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="frontend developer"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="fullstack developer"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="cloud architect"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="devops engineer"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="blockchain engineer"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="software architect"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="bigdata engineer"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="iot"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="internet of things"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="data scientist"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="cyber security engineer"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="ui designer"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="software testing"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="software"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="engineer"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="manager"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="developer"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="security"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="database"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="data"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="analyst"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="product"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="ai"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="frontend"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="front end"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="full stack"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="fullstack"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="cloud"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="devops"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="blockchain"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="block chain"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="big data"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="bigdata"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="scientist"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="testing"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="tester"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
-  else if(keyword=="cyber security"){
-    window.location.href = `highpaying jobs.html?q=${keyword}`;
-  }
+  const searchForm = document.querySelector('form[role="search"]');
+  const searchInput = document.getElementById('search-keyword');
+  const searchButton = searchForm.querySelector('button[type="submit"]');
   
-});
-</script>
+  searchButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    let keyword = searchInput.value.trim();
+    let keyword1 = keyword.toLowerCase();
+    if (keyword1=="java") {
+      window.location.href = `programmingTutorial.html#java?q=${keyword}`;
+      toJAVA();
+    }
+    else if(keyword1=="javascript"){
+      window.location.href = `programmingTutorial.html#javascript?q=${keyword}`;
+      toJAVASCRIPT();
+    }
+    else if(keyword1=="c"){
+      window.location.href = `programmingTutorial.html#c?q=${keyword}`;
+      toC();
+    }
+    else if(keyword1=="python"){
+      window.location.href = `programmingTutorial.html#python?q=${keyword}`;
+      toPYTHON();
+    }
+    else if(keyword1=="c++"){
+      window.location.href = `programmingTutorial.html#c++?q=${keyword}`;
+      toCPP();
+    }
+    else if(keyword1=="php"){
+      window.location.href = `programmingTutorial.html#php?q=${keyword}`;
+      toPHP();
+    }
+    else if(keyword1=="r"){
+      window.location.href = `programmingTutorial.html#r?q=${keyword}`;
+      toR();
+    }
+    else if(keyword1=="kotlin"){
+      window.location.href = `programmingTutorial.html#kotlin?q=${keyword}`;
+      toKOTLIN();
+    }
+    else if(keyword1=="sql"){
+      window.location.href = `programmingTutorial.html#sql?q=${keyword}`;
+      toSQL();
+    }
+    else if(keyword=="swift"){
+      window.location.href = `programmingTutorial.html#swift?q=${keyword}`;
+      toSWIFT();
+    }
+    else if(keyword=="software engineer"){
+      window.location.href = `highpaying jobs.html#software-engineer?q=${keyword}`;
+      tosoftwareengineer();
+    }
+    else if(keyword=="software engineer manager"){
+      window.location.href = `highpaying jobs.html#software-engineer?q=${keyword}`;
+      tosoftwareengineer();
+    }
+    else if(keyword=="app developer"){
+      window.location.href = `highpaying jobs.html#app-developer?q=${keyword}`;
+      toappdeveloper();
+    }
+    else if(keyword=="application developer"){
+      window.location.href = `highpaying jobs.html#app-developer?q=${keyword}`;
+      toappdeveloper();
+    }
+    else if(keyword=="mobile application developer"){
+      window.location.href = `highpaying jobs.html#app-developer?q=${keyword}`;
+      toappdeveloper();
+    }
+    else if(keyword=="andriod app developer"){
+      window.location.href = `highpaying jobs.html#app-developer?q=${keyword}`;
+      toappdeveloper();
+    }
+    else if(keyword=="mobile app developer"){
+      window.location.href = `highpaying jobs.html#app-developer?q=${keyword}`;
+      toappdeveloper();
+    }
+    else if(keyword=="information system security manager"){
+      window.location.href = `highpaying jobs.html#information-system-security-manager?q=${keyword}`;
+      toinformationsystemsecuritymanager();
+    }
+    else if(keyword=="information security manager"){
+      window.location.href = `highpaying jobs.html#information-system-security-manager?q=${keyword}`;
+      toinformationsystemsecuritymanager();
+    }
+    else if(keyword=="system security manager"){
+      window.location.href = `highpaying jobs.html#information-system-security-manager?q=${keyword}`;
+      toinformationsystemsecuritymanager();
+    }
+    else if(keyword=="database manager"){
+      window.location.href = `highpaying jobs.html#database-manager?q=${keyword}`;
+      todatabasemanager();
+    }
+    else if(keyword=="data security analyst"){
+      window.location.href = `highpaying jobs.html#data-security-analyst?q=${keyword}`;
+      todatasecurityanalyst();
+    }
+    else if(keyword=="product manager"){
+      window.location.href = `highpaying jobs.html#product-manager?q=${keyword}`;
+      toproductmanager();
+    }
+    else if(keyword=="artificial intelligence"){
+      window.location.href = `highpaying jobs.html#artificial-intelligence?q=${keyword}`;
+      toartificialintelligence();
+    }
+    else if(keyword=="ai engineer"){
+      window.location.href = `highpaying jobs.html#artificial-intelligence?q=${keyword}`;
+      toartificialintelligence();
+    }
+    else if(keyword=="frontend developer"){
+      window.location.href = `highpaying jobs.html#frontend-developer?q=${keyword}`;
+      tofrontenddeveloper();
+    }
+    else if(keyword=="fullstack developer"){
+      window.location.href = `highpaying jobs.html#fullstack-developer?q=${keyword}`;
+      tofullstackdeveloper();
+    }
+    else if(keyword=="cloud architect"){
+      window.location.href = `highpaying jobs.html#cloud-architect?q=${keyword}`;
+      tocloudarchitect();
+    }
+    else if(keyword=="devops engineer"){
+      window.location.href = `highpaying jobs.html#devops-engineer?q=${keyword}`;
+      todevopsengineer();
+    }
+    else if(keyword=="blockchain engineer"){
+      window.location.href = `highpaying jobs.html#blockchain-engineer?q=${keyword}`;
+      toblockchainengineer();
+    }
+    else if(keyword=="software architect"){
+      window.location.href = `highpaying jobs.html#software-architect?q=${keyword}`;
+      tosoftwarearchitect();
+    }
+    else if(keyword=="bigdata engineer"){
+      window.location.href = `highpaying jobs.html#bigdata-engineer?q=${keyword}`;
+      tobigdataengineer();
+    }
+    else if(keyword=="iot"){
+      window.location.href = `highpaying jobs.html#iot?q=${keyword}`;
+      toiot();
+    }
+    else if(keyword=="internet of things"){
+      window.location.href = `highpaying jobs.html#iot?q=${keyword}`;
+      toiot();
+    }
+    else if(keyword=="data scientist"){
+      window.location.href = `highpaying jobs.html#data-scientist?q=${keyword}`;
+      todatascientist();
+    }
+    else if(keyword=="cyber security engineer"){
+      window.location.href = `highpaying jobs.html#cyber-security-engineer#cyber-security-engineer?q=${keyword}`;
+      tocybersecurityengineer();
+    }
+    else if(keyword=="ui designer"){
+      window.location.href = `highpaying jobs.html#ui-designer?q=${keyword}`;
+      touidesigner();
+    }
+    else if(keyword=="software testing"){
+      window.location.href = `highpaying jobs.html#software-testing?q=${keyword}`;
+      tosoftwaretesting();
+    }
+    else if(keyword=="software"){
+      window.location.href = `highpaying jobs.html#software-testing?q=${keyword}`;
+      tosoftwaretesting();
+    }
+    else if(keyword=="engineer"){
+      window.location.href = `highpaying jobs.html?q=${keyword}`;
+    }
+    else if(keyword=="manager"){
+      window.location.href = `highpaying jobs.html?q=${keyword}`;
+    }
+    else if(keyword=="developer"){
+      window.location.href = `highpaying jobs.html?q=${keyword}`;
+    }
+    else if(keyword=="security"){
+      window.location.href = `highpaying jobs.html#cyber-security-engineer?q=${keyword}`;
+      tocybersecurityengineer();
+    }
+    else if(keyword=="database"){
+      window.location.href = `highpaying jobs.html#database-manager?q=${keyword}`;
+      todatabasemanager();
+    }
+    else if(keyword=="data"){
+      window.location.href = `highpaying jobs.html#database-manager?q=${keyword}`;
+      todatabasemanager();
+    }
+    else if(keyword=="analyst"){
+      window.location.href = `highpaying jobs.html#data-security-analyst?q=${keyword}`;
+      todatasecurityanalyst();
+    }
+    else if(keyword=="product"){
+      window.location.href = `highpaying jobs.html#product-manager?q=${keyword}`;
+      toproductmanager();
+    }
+    else if(keyword=="ai"){
+      window.location.href = `highpaying jobs.html#artificial-intelligence?q=${keyword}`;
+      toartificialintelligence();
+    }
+    else if(keyword=="frontend"){
+      window.location.href = `highpaying jobs.html#frontend-developer?q=${keyword}`;
+      tofrontenddeveloper();
+    }
+    else if(keyword=="front end"){
+      window.location.href = `highpaying jobs.html#frontend-developer?q=${keyword}`;
+      tofrontenddeveloper();
+    }
+    else if(keyword=="full stack"){
+      window.location.href = `highpaying jobs.html#fullstack-developer?q=${keyword}`;
+      tofullstackdeveloper();
+    }
+    else if(keyword=="fullstack"){
+      window.location.href = `highpaying jobs.html#fullstack-developer?q=${keyword}`;
+      tofullstackdeveloper();
+    }
+    else if(keyword=="cloud"){
+      window.location.href = `highpaying jobs.html#cloud-architect?q=${keyword}`;
+      tocloudarchitect();
+    }
+    else if(keyword=="devops"){
+      window.location.href = `highpaying jobs.html#devops-engineer?q=${keyword}`;
+      todevopsengineer();
+    }
+    else if(keyword=="blockchain"){
+      window.location.href = `highpaying jobs.html#blockchain-engineer?q=${keyword}`;
+      toblockchainengineer();
+    }
+    else if(keyword=="block chain"){
+      window.location.href = `highpaying jobs.html#blockchain-engineer?q=${keyword}`;
+      toblockchainengineer();
+    }
+    else if(keyword=="big data"){
+      window.location.href = `highpaying jobs.html#bigdata-engineer?q=${keyword}`;
+      tobigdataengineer();
+    }
+    else if(keyword=="bigdata"){
+      window.location.href = `highpaying jobs.html#bigdata-engineer?q=${keyword}`;
+      tobigdataengineer();
+    }
+    else if(keyword=="scientist"){
+      window.location.href = `highpaying jobs.html#data-scientist?q=${keyword}`;
+      todatascientist();
+    }
+    else if(keyword=="testing"){
+      window.location.href = `highpaying jobs.html#software-testing?q=${keyword}`;
+      tosoftwaretesting();
+    }
+    else if(keyword=="tester"){
+      window.location.href = `highpaying jobs.html#software-testing?q=${keyword}`;
+      tosoftwaretesting();
+    }
+    else if(keyword=="cyber security"){
+      window.location.href = `highpaying jobs.html#cyber-security-engineer?q=${keyword}`;
+      tocybersecurityengineer();
+    } 
+  });
+  function toSQL(){
+    const sqlelement = document.getElementById('sql');
+    sqlelement.scrollIntoView()
+  }
+  function toJAVASCRIPT(){
+    const javascriptelement = document.getElementById('javascript');
+    javascriptelement.scrollIntoView()
+  }
+  function toJAVA(){
+    const javaelement = document.getElementById('java');
+    javaelement.scrollIntoView()
+  }
+  function toC(){
+    const celement = document.getElementById('c');
+    celement.scrollIntoView()
+  }
+  function toPYTHON(){
+    const pythonelement = document.getElementById('python');
+    pythonelement.scrollIntoView()
+  }
+  function toCPP(){
+    const cppelement = document.getElementById('c++');
+    cppelement.scrollIntoView()
+  }
+  function toPHP(){
+    const phpelement = document.getElementById('php');
+    phpelement.scrollIntoView()
+  }
+  function toR(){
+    const relement = document.getElementById('r');
+    relement.scrollIntoView()
+  }
+  function toKOTLIN(){
+    const kotlinelement = document.getElementById('kotlin');
+    kotlinelement.scrollIntoView()
+  }
+  function toSWIFT(){
+    const swiftelement = document.getElementById('swift');
+    swiftelement.scrollIntoView()
+  }
+  function tosoftwareengineer(){
+    const softwareengineerelement = document.getElementById('software-engineer');
+    softwareengineerelement.scrollIntoView()
+  }
+  function toappdeveloper(){
+    const appdeveloperelement = document.getElementById('app-developer');
+    appdeveloperelement.scrollIntoView()
+  }
+  function toinformationsystemsecuritymanager(){
+    const informationsystemsecuritymanagerelement = document.getElementById('information-system-security-manager');
+    informationsystemsecuritymanagerelement.scrollIntoView()
+  }
+  function todatabasemanager(){
+    const databasemanagerelement = document.getElementById('database-manager');
+    databasemanagerelement.scrollIntoView()
+  }
+  function todatasecurityanalyst(){
+    const datasecurityanalystelement = document.getElementById('data-security-analyst');
+    datasecurityanalystelement.scrollIntoView()
+  }
+  function toproductmanager(){
+    const productmanagerelement = document.getElementById('product-manager');
+    productmanagerelement.scrollIntoView()
+  }
+  function toartificialintelligence(){
+    const artificialintelligenceelement = document.getElementById('artificial-intelligence');
+    artificialintelligenceelement.scrollIntoView()
+  }
+  function tofrontenddeveloper(){
+    const frontenddeveloperelement = document.getElementById('frontend-developer');
+    frontenddeveloperelement.scrollIntoView()
+  }
+  function tofullstackdeveloper(){
+    const fullstackdeveloperelement = document.getElementById('fullstack-developer');
+    fullstackdeveloperelement.scrollIntoView()
+  }
+  function tocloudarchitect(){
+    const cloudarchitectelement = document.getElementById('cloud-architect');
+    cloudarchitectelement.scrollIntoView()
+  }
+  function todevopsengineer(){
+    const devopsengineerelement = document.getElementById('devops-engineer');
+    devopsengineerelement.scrollIntoView()
+  }
+  function toblockchainengineer(){
+    const blockchainengineerelement = document.getElementById('blockchain-engineer');
+    blockchainengineerelement.scrollIntoView()
+  }
+  function tosoftwarearchitect(){
+    const softwarearchitectelement = document.getElementById('software-architect');
+    softwarearchitectelement.scrollIntoView()
+  }
+  function tobigdataengineer(){
+    const bigdataengineerelement = document.getElementById('bigdata-engineer');
+    bigdataengineerelement.scrollIntoView()
+  }
+  function toiot(){
+    const iotelement = document.getElementById('iot');
+    iotelement.scrollIntoView()
+  }
+  function todatascientist(){
+    const datascientistelement = document.getElementById('data-scientist');
+    datascientistelement.scrollIntoView()
+  }
+  function tocybersecurityengineer(){
+    const cybersecurityengineerelement = document.getElementById('cyber-security-engineer');
+    cybersecurityengineerelement.scrollIntoView()
+  }
+  function touidesigner(){
+    const uidesignerelement = document.getElementById('ui-designer');
+    uidesignerelement.scrollIntoView()
+  }
+  function toappdeveloper(){
+    const appdeveloperelement = document.getElementById('app-developer');
+    appdeveloperelement.scrollIntoView()
+  }
+  function tosoftwaretesting(){
+    const softwaretestingelement = document.getElementById('software-testing');
+    softwaretestingelement.scrollIntoView()
+  }
+  </script>
+
 </html>

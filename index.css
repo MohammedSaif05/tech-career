@@ -286,6 +286,8 @@ body{
     margin-top: 6%;
 }
 }
+/*mobile view */
+
 @media (max-width: 576px) { 
   .introduction{
     width: 610px;
@@ -307,6 +309,8 @@ body{
     margin-top: 20%;
   }
  }
+ /*tablet view*/
+
  @media (max-width: 768px) and (min-width: 576px) {
   .introduction{
     width: 780px;
@@ -325,5 +329,6 @@ body{
   }
   .footer{
     width: 780px;
+    margin-top: 15%;
   }
  }
